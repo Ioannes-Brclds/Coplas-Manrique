@@ -31,7 +31,14 @@
 \setotherlanguage{ancientgreek}
 \usetikzlibrary{positioning}
 \setmainfont[Numbers=Lining,BoldFont={}]{old standard}
+
+%Para que se cite correctamente el shortauthor.  
+\makeatletter
+\AtEveryCitekey{\ifnameundef{shortauthor}{}{\def\cbx@apa@ifnamesaved{\@firstoftwo}}}
+\makeatother
+
 %Aquí cierran los comandos más específicos.
+
 \begin{document}
 	{\pagenumbering{gobble}
 	\maketitle
@@ -238,7 +245,7 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 %Espacio para que el comando que ejecuta el sistema no se quiebre.
 \beginnumbering
 \pstart
-{\fontsize{9}{11}\selectfont RECUERDE}\footnoteC{ \comillas{Recuerde} no tiene la acepción de \comillas{traer a la memoria}, sino la de \comillas{despertar} y, para ello, el \textit{Tesoro de la lengua castellana} de Covarrubias (1611) registra para el vocablo \textit{recordar} \comillas{despertar el que duerme, o boluer en acuerdo, del verbo recordor}; además, la 2ª acepción en el \textit{Diccionario de Autoridades} registra \comillas{Metaphoricamente vale despertar al que está dormido}.} el alma dormida,\\
+{\fontsize{9}{11}\selectfont RECUERDE}\footnoteC{ \comillas{Recuerde} no tiene la acepción de \comillas{traer a la memoria}, sino la de \comillas{despertar} y, para ello, el \textit{Tesoro de la lengua castellana} de \textcite{Covarrubias1611} registra para el vocablo \textit{recordar} \comillas{despertar el que duerme, o boluer en acuerdo, del verbo recordor}; además, la 2ª acepción en el \textit{Diccionario de Autoridades} registra \comillas{Metaphoricamente vale despertar al que está dormido}.} el alma dormida,\\
 avive el seso y despierte
 
 contenplando\\
