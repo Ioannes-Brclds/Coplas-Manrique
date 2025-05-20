@@ -16,9 +16,10 @@
 %Aquí cierran los comandos para el documento.
 \Xarrangement{paragraph}
 \Xnumberonlyfirstinline
-\Xnumberonlyfrstintwolines
-\Xsymlinenum{$//$}}
+\Xsymlinenum{$||$}
+\Xbeforesymlinenum{-0.5em}
 \newcommand{\comillas}[1]{«#1»}
+\Xnonbreakableafternumber
 \clearpairofpagestyles
 \ofoot[\pagemark]{\pagemark}
 \fnpos{critical-familiar}
@@ -27,8 +28,8 @@
 	{A}{critical},%
 	{C}{familiar},%
 }
-\setmainlanguage{spanish}
-\setotherlanguage{ancientgreek}
+\setdefaultlanguage{spanish}
+\setotherlanguage[variant=ancient]{greek}
 \usetikzlibrary{positioning}
 \setmainfont[Numbers=Lining,BoldFont={}]{old standard}
 
@@ -68,7 +69,7 @@ Las \textit{Coplas por la muerte de su padre} son una «colección» de coplas e
 
 El título de la obra, \textit{Coplas por la muerte de su padre}, resulta un tanto arbitraria si se analizan las rúbricas que la tradición textual transmitió: los testimonios transmitieron \comillas{dezir} [\textit{82*JM}], \comillas{coplas} [\textit{LB3}, \textit{HH1}, \textit{83*IM}] y algún otro \comillas{De don jorge manrique} [\textit{86*RL}]. Parece evidente, pues, que el título de la obra no es estrictamente reconstruible, aunque, por mayoría, se prefiere \comillas{coplas}, como puede observarse desde la edición de \textcite{Foulché-Delbosc1902} hasta \textcite{Beltrán2013}. Es probable que, como algunos textos medievales, este no se haya concebido con un título como tal, o al menos no como se transmitió.
 
-No se conservaron autógrafos de alguna copla ni testimonios que puedan considerarse apógrafos o idiógrafos. El testimonio más antiguo que contiene la colección de cuarenta coplas es el manuscrito del \textit{Cancionero de Egerton}, y no es sino hasta ca. 1482-83 —seis o siete años tras la redacción y cuatro o cinco tras el fallecimiento del autor— que aparece en un impreso en carácter de \textit{editio princeps}. Es necesario destacar que no existió un \comillas{obras de don Jorge Manrique} o una edición de sus textos, sino que solo se conservaron dispersos en cancioneros, esto es, antologías.
+No se conservaron autógrafos de alguna copla ni testimonios que puedan considerarse apógrafos o idiógrafos. El testimonio más antiguo que contiene la colección de cuarenta coplas es el manuscrito del \textit{Cancionero de Egerton}, y no es sino hasta ca. 1482-83 —seis o siete años tras la redacción y cuatro o cinco tras el fallecimiento del autor— que aparece en un impreso en carácter de \textit{editio princeps}. Es necesario destacar que no existió un \comillas{obras de don Jorge Manrique} o una edición de sus textos, sino que solo se conservaron dispersos en cancioneros.
 
 \section*{\fontsize{13}{14.35}\selectfont TESTIMONIOS\footnote{Se adoptan las siglas utilizadas por \textcite{PérezPriego2017} quien, a su vez, las adopta de Dutton a partir de \textit{El cancinonero del s. XV (ca. 1360-1520)} [7 vols.], texto que para la presente edición no pudo consultarse.}}
 \addcontentsline{toc}{section}{TESTIMONIOS}
@@ -203,7 +204,7 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 
 \textit{HH1}= \textit{Cancionero de Oñate-Castañeda}, s. XV.
 
-\textit{MN19}= \textit{Cancionero de Pero Guillén de Segovia}, copia del s. XVIII de un manuscrito del XV.
+\textit{MN19}= \textit{Cancionero de Pero Guillén de Segovia}, copia del s. XVIII de un manuscrito del s. XV.
 
 \textit{83*IM}= \textit{Cancionero de fray Íñigo de Mendoza}, 1483?
 
@@ -232,11 +233,11 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 
 \textit{transp.}= transposuit [trasladó de sitio].
 
-\textit{γ}= \textit{δ} + \textit{ε}.
-
 \textit{δ}= \textit{82*JM} + \textit{86*RL}.
 
-\textit{ε}= \textit{HH1} + \textit{MN19}. 
+\textit{ε}= \textit{HH1} + \textit{MN19}.
+
+\textit{γ}= \textit{δ} + \textit{ε}. 
 \newpage
 %Aquí inician las COPLAS POR LA MVERTE DE SV PADRE.
 {\begin{center}
@@ -338,7 +339,7 @@ para el otro, que es morada
 
 sin pesar,\\
 mas cunple tener bue\textit{n} tino\\
-para andar esta \edtext{jornada}{\Afootnote{este camino \textit{82*JM}}}
+para andar \edtext{esta jornada}{\Afootnote{este camino \textit{82*JM}}}
 
 sin errar.\\
 Partimos q\textit{ua}ndo nasçemos,\\
@@ -489,7 +490,7 @@ en una cosa.
 y \edtext{lleguen}{\Afootnote{llegue \textit{LB3}}} fasta la huesa
 
 co\textit{n} su dueño;\\
-\edtext{por eso}{\Afootnote{por esto \textit{82*JM}; mas por eso \textit{HH1}}} no \edtext{nos engañen}{\Afootnote{engañe \textit{LB3}; sengañen \textit{HH1}}}\footnoteC{ Se adoptan las lecciones de número plural del texto mayoritario frente a las de número singular —esto es, \comillas{aco\textit{n}pañe}, \comillas{llegue} y \comillas{engañe}— que porta \textit{LB3}.},\\
+\edtext{por eso}{\Afootnote{por esto \textit{82*JM}; mas por eso \textit{HH1}}} no \edtext{nos engañen}{\Afootnote{nos engañe \textit{LB3}; sengañen \textit{HH1}}}\footnoteC{ Se adoptan las lecciones de número plural del texto mayoritario frente a las de número singular —esto es, \comillas{aco\textit{n}pañe}, \comillas{llegue} y \comillas{engañe}— que porta \textit{LB3}.},\\
 pues se va la vida \edtext{apriesa}{\Afootnote{espesa \textit{MN19}}}
 
 como sueño.\\
@@ -856,7 +857,7 @@ de su tierra.
 \end{center}
 \pstart
 No dexó grandes thesoros\\
-ni \edtext{alcançó}{\lemma{alcanço}\Afootnote{llego HH1}} \edtext{gra\textit{n}des}{\Afootnote{muchas 86*RL}} riq\textit{ue}zas 
+ni \edtext{alcançó}{\lemma{alcanço}\Afootnote{llego \textit{HH1}}} \edtext{gra\textit{n}des}{\Afootnote{muchas \textit{86*RL}}} riq\textit{ue}zas 
 
 ni baxillas,\\
 mas fizo \edtext{guerras a moros}{\Afootnote{guerra a los moros \textit{δ}, \textit{MN19}, \textit{83*IM}; gran guerra a moros \textit{HH1}}}\footnoteC{ «guerras a moros» en \textit{LB3}. Se siguen las lecciones plurales de \textit{LB3}, porque don Rodrigo Manrique probablemente no participó en una guerra, sino en otras más. Es necesario atender a los datos proporcionados por Fernando del Pulgar en su \textit{Claros varones de Castilla} [ca. 1480-1486] que, en un capítulo dedicado al maestre, el XIII, titulado «El Maestre Don Rodrigo Manrrique, Conde de Paredes» —que ya citó \textcite[cap. IX]{MenendezYPelayo1944}—, los recoge con gran detalle. A continuación, el texto según la edición crítica de Tate:\\
@@ -998,7 +999,7 @@ acá dexáis;\\
 \edtext{que aunque esta vida de honor}{\Afootnote{aun que vida esta de honor \textit{83*IM}}}\\
 \edtext{tanpoco no es}{\Afootnote{no penseis ques \textit{MN19}; es \textit{om. 83*IM}}} eternal
 
-\edtext{ni}{\Afootnote{\textit{om. 83*IM}}} \edtext{duradera}{\Afootnote{verdadera \textit{δ}, \textit{MN19}}},\\
+\edtext{ni}{\Afootnote{\textit{om. 83*IM}}} \edtext{duradera}{\Afootnote{verdadera \textit{δ}, \textit{MN19}, \textit{83*IM}}},\\
 mas co\textit{n} todo es muy mejor\\
 que la \edtext{otra}{\Afootnote{corona \textit{82*JM}}} \edtext{temporal}{\Afootnote{ynfernal \textit{LB3}; corporal \textit{MN19}}},                                                                            
 
@@ -1110,7 +1111,7 @@ el qual \edtext{la ponga}{\lemma{laponga}\Afootnote{ladio \textit{86*RL}}} en el
 
 y en su gloria;\\
 \edtext{q\textit{ue} aunq\textit{ue}}{\Afootnote{y aunque \textit{82*JM}, \textit{MN19}, \textit{83*IM}}} la vida \edtext{murió}{\lemma{murio}\Afootnote{perdio \textit{LB3}, \textit{86*RL}}}\footnoteC{ «murió» en \textit{82*JM}, \textit{MN19}, \textit{83*IM}. Continuando el argumento anterior, se opta por la lección \textit{murió} porque, al fallecer Rodrigo Manrique con todos sus «sentidos humanos conservados», él «se conservaría» a través de la memoria de sus allegados, cosa que no acontecería si «perdiese» la vida [carnal], porque «perder» tiene connotaciones negativas según la 6ª y 7ª acepción en el \textit{Diccionario de Autoridades}, que registra «ocasionar algún daño a las cosas, desmejorándolas o desluciéndolas» y «padecer algún daño, ruína o disminución en lo material, inmaterial o espiritual». Si la «perdiese», aceptando estas acepciones, podría «dañar» o «desmejorar» los \textit{sentidos} y el \textit{entendímiento}, facultades que «regresan» en «plena forma» a su dios, como ya demostraron \textcite{Conde2009} y \textcite{Gonzalez2019}. De ser así, \textit{perdió} anularía la lección \textit{conservados} y, por tanto, según lo estudiado, lo correcto sería \textit{murió}.},\\
-\edtext{dexónos}{\lemma{dexonos}\Afootnote{nos dexo \textit{82*JM}, \textit{MN19}, \textit{83*IM}.}} harto consuelo 
+\edtext{dexónos}{\lemma{dexonos}\Afootnote{nos dexo \textit{82*JM}, \textit{MN19}, \textit{83*IM}}} harto consuelo 
 
 su memoria.
 \pend
