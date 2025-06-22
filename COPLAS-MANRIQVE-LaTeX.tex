@@ -44,8 +44,10 @@
 \makeatletter
 \AtEveryCitekey{\ifnameundef{shortauthor}{}{\def\cbx@apa@ifnamesaved{\@firstoftwo}}}
 \makeatother
-
-%Aquí cierran los comandos más específicos.
+%Espaciado de la lista.
+\usepackage{enumitem}
+\setlist{nosep,noitemsep,parsep=0pt}
+%
 
 \begin{document}
 	{\pagenumbering{gobble}
@@ -157,29 +159,20 @@ Se utilizó como texto base el testimonio \textit{LB3} por portar este lecciones
 
 Criterios de presentación gráfica\footnoteC{Las modificaciones no aplican al aparato de variantes, a excepción de \textit{nn} y las grafías dobles.}:
 
-~\textit{b}-\textit{v} = se conserva la alternancia.
-
-~\textit{f} = se mantiene en vocablos como \comillas{fizo} [hizo], \comillas{falló} [halló], \comillas{fijo} [hijo], porque, en general, corresponden a la \textit{f} inicial latina y, por tanto anulan las sinalefas.
-
-~\textit{t} = se respeta la grafía en expresiones finalizadas en -\textit{at}, salvo cuando el testimonio exija una conversión por la rima.
-
-~\textit{x} = equivale a la fricativa posalveolar sorda, por tanto, se conserva.
-
-~\textit{ç} = se respetan en el texto las soluciones que ofrece el testimonio de base.
-
-~\textit{i}-\textit{y}-\textit{j} = se regulariza. \textit{i} se coloca para vocales; \textit{y} para la conjunción copulativa y para vocablos cuya grafía final es \textit{y} vocálico [rey]; \textit{j} solo para consonantes.
-
-~\textit{g}-\textit{j} = la alternancia se conserva.
-
-~\textit{v}-\textit{u} = se coloca \textit{v} cuando es una consonante y \textit{u} cuando es vocal.
-
-~\textit{rr}-\textit{ss}-\textit{ff} = se simplifican en \textit{r}, \textit{s} y \textit{f}.
-
-~\textit{nn} = se transcribe como \textit{ñ}.
-
-~\textit{th} = se conserva para indicar latinismos cultos en el texto.
-
-~\textit{⁊} = se interpreta por \textit{e}.
+\begin{itemize}[label=--]%
+\item \textit{b}-\textit{v} = se conserva la alternancia.
+\item \textit{f} = se mantiene en vocablos como \comillas{fizo} [hizo], \comillas{falló} [halló], \comillas{fijo} [hijo], porque, en general, corresponden a la \textit{f} inicial latina y, por tanto anulan las sinalefas.
+\item \textit{t} = se respeta la grafía en expresiones finalizadas en -\textit{at}, salvo cuando el testimonio exija una conversión por la rima.
+\item \textit{x} = equivale a la fricativa posalveolar sorda, por tanto, se conserva.
+\item \textit{ç} = se respetan en el texto las soluciones que ofrece el testimonio de base.
+\item \textit{i}-\textit{y}-\textit{j} = se regulariza. \textit{i} se coloca para vocales; \textit{y} para la conjunción copulativa y para vocablos cuya grafía final es \textit{y} vocálico [rey]; \textit{j} solo para consonantes.
+\item \textit{g}-\textit{j} = la alternancia se conserva.
+\item \textit{v}-\textit{u} = se coloca \textit{v} cuando es una consonante y \textit{u} cuando es vocal.
+\item \textit{rr}-\textit{ss}-\textit{ff} = se simplifican en \textit{r}, \textit{s} y \textit{f}.
+\item \textit{nn} = se transcribe como \textit{ñ}.
+\item \textit{th} = se conserva para indicar latinismos cultos en el texto.
+\item \textit{⁊} = se interpreta por \textit{e}.%
+\end{itemize}
 
 Las contracciones se separan sin indicación alguna. Las grafías en cursiva corresponden, casi sin excepción, a siglas en \textit{LB3}, que se desarrollaron según usos del copista; también cuando se adopten lecciones de \textit{HH1} o de algún testimonio impreso.
 
@@ -200,51 +193,37 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 \section*{\fontsize{13}{14.35}\selectfont CONSPECTVS SIGLORVM}
 \addcontentsline{toc}{section}{Conspectus siglorum}
 
-\subsection*{\fontsize{11}{11.96}\selectfont TESTIMONIA}
-\addcontentsline{toc}{subsection}{Testimonia}
+\subsection*{\fontsize{9.5}{11.96}\selectfont SIGLA TESTIMONIORVM}
+\addcontentsline{toc}{subsection}{Sigla testimoniorum}
 
-\textit{LB3} = \textit{Cancionero de Egerton}, 1470?-1480?
+\begin{itemize}[label=]%
+\item \textit{LB3} = \textit{Cancionero de Egerton}, 1470?-1480?
+\item \textit{82*JM} = \textit{Vita Christi por Fray Íñigo de Mendoza}, ca. 1480-1484.
+\item \textit{86*RL} = \textit{Cancionero de Ramón de Llavia}, 1488-1490?
+\item \textit{HH1} = \textit{Cancionero de Oñate-Castañeda}, s. XV.
+\item \textit{MN19} = \textit{Cancionero de Pero Guillén de Segovia}, copia del s. XVIII de un MS. del s. XV.
+\item \textit{83*IM} = \textit{Cancionero de fray Íñigo de Mendoza}, 1483?%
+\end{itemize}
 
-\textit{82*JM} = \textit{Vita Christi por Fray Íñigo de Mendoza}, ca. 1480-1484.
+\subsection*{\fontsize{9.5}{11.96}\selectfont SIGLA APPARATI CRITICI}
+\addcontentsline{toc}{subsection}{Sigla apparati critici}
 
-\textit{86*RL} = \textit{Cancionero de Ramón de Llavia}, 1488-1490?
-
-\textit{HH1} = \textit{Cancionero de Oñate-Castañeda}, s. XV.
-
-\textit{MN19} = \textit{Cancionero de Pero Guillén de Segovia}, copia del s. XVIII de un manuscrito del s. XV.
-
-\textit{83*IM} = \textit{Cancionero de fray Íñigo de Mendoza}, 1483?
-
-\subsection*{\fontsize{11}{11.96}\selectfont APPARATVS CRITICVS}
-\addcontentsline{toc}{subsection}{Apparatus criticus}
-
-\textit{a. corr.} = ante correctionem [antes de la corrección].
-
-\textit{gl.} = glossa.
-
-\textit{corr.} = correxit [corrigió].
-
-\textit{eras.} = erasit [borró].
-
-\textit{err.} = erravit [erró].
-
-\textit{ras.} = rasura [parte tachada o dañada].
-
-\textit{om.} = omisit [omitió].
-
-\textit{p. corr.} = post correctionem [tras la corrección].
-
-\textit{pr.} = prius [anterior].
-
-\textit{sec. m.} = secunda manus [segunda redacción].
-
-\textit{transp.} = transposuit [trasladó de sitio].
-
-\textit{δ} = \textit{82*JM} + \textit{86*RL}.
-
-\textit{ε} = \textit{HH1} + \textit{MN19}.
-
-\textit{γ} = \textit{δ} + \textit{ε}. 
+\begin{itemize}[label=]%
+\item \textit{a. corr.} = ante correctionem [antes de la corrección].
+\item \textit{gl.} = glossa.
+\item \textit{corr.} = correxit [corrigió].
+\item \textit{eras.} = erasit [borró].
+\item \textit{err.} = erravit [erró].
+\item \textit{ras.} = rasura [parte tachada o dañada].
+\item \textit{om.} = omisit [omitió].
+\item \textit{p. corr.} = post correctionem [tras la corrección].
+\item \textit{pr.} = prius [anterior].
+\item \textit{sec. m.} = secunda manus [segunda redacción].
+\item \textit{transp.} = transposuit [trasladó de sitio].
+\item \textit{δ} = \textit{82*JM} + \textit{86*RL}.
+\item \textit{ε} = \textit{HH1} + \textit{MN19}.
+\item \textit{γ} = \textit{δ} + \textit{ε}.%
+\end{itemize} 
 \newpage
 %Aquí inician las COPLAS POR LA MVERTE DE SV PADRE.
 {\begin{center}
