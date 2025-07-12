@@ -2,7 +2,7 @@
 \usepackage[noeledsec,noend,noledgroup,nopenalties,series={A,E},parapparatus]{reledmac}
 \usepackage{reledpar}
 \usepackage{fontspec}
-\usepackage[paperwidth=17.50cm,paperheight=25.50cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.54cm]{geometry}
+\usepackage[paperwidth=17.00cm,paperheight=25.50cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
 \usepackage{polyglossia}
 \usepackage[breaklinks=true,hidelinks]{hyperref}
 \usepackage{tikz}
@@ -30,14 +30,12 @@
 \parindentX[E]
 \Xsymlinenum{||}
 \Xbeforesymlinenum{-0.6em}
+\Xafterlemmaseparator{0.4em}
+\Xbeforelemmaseparator{-0.1em}
+\Xafternumber{0.4em}
 \newcommand{\comillas}[1]{«#1»}
 \newcommand{\tsup}[1]{\textsuperscript{#1}}
 \renewcommand{\thefootnoteA}{}
-%
-\Xprenotes{11pt}
-\prenotesX{11pt}
-\Xafterrule{2pt}
-\afterruleX{2pt}
 %
 \usepackage{tocloft}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
@@ -60,11 +58,11 @@
 \hskip0pt
 \vfill
 \begin{flushright}
-	\textit{Edición preparada por} I. Brachamons Letesmus.
+	Edición preparada por I. Brachamons Letesmus.
 \end{flushright}
 
 \begin{flushright}
-	\textit{Documento compuesto en} LuaLaTeX \textit{con el paquete} Reledmac \textit{de} Maïeul Rouquette.
+	Documento compuesto en LuaLaTeX con el paquete Reledmac de Maïeul Rouquette.
 \end{flushright}
 \newpage
 %
@@ -73,21 +71,21 @@
 %
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\section*{\fontsize{13}{14.35}\selectfont PREFACIO}
+\section*{\fontsize{11}{14}\selectfont PREFACIO}
 \addcontentsline{toc}{section}{Prefacio}
 
-Jorge Manrique nació ca. 1440 y falleció en abril de 1479. Una noticia de su fallecimiento la transmite Fernando del Pulgar en su \textit{Crónica de los reyes Católicos}:
+Jorge Manrique nació ca. 1440 y falleció en abril de 1479. Una noticia de su fallecimiento la transmitió Fernando del Pulgar en su \textit{Crónica de los reyes Católicos}:
 
 \comillas{[...] \textit{peleaban los más días con el marqués de Villena e con su gente, e había entre ellos algunos recuentros. En uno de los quales, el capitán don Jorge Manrique se metió con tanta osadía entres los enemigos que, por no ser visto de los suyos para que fuera socorrido, le firieron de muchos colpes, e murió peleando cerca d las puertas del castillo de Garcimuñoz, donde acaeció aquella pelea, en la qual murieron algunos escuderos e peones de la una e la otra parte.}}\footnoteE{[De la guerra que se fizo contra el marqués de Villena en Escalona y en el Marquesado]. En la ed. de Carriazo, aquí utilizada, vol. I, se ubica en la pág. 358; en la \textit{editio princeps}, atribuida a Nebrija, de 1565, en el cap. C, f. 120\tsup{r.}; en la ed. de 1780 [Valencia], en \comillas{Segunda parte}, cap. LXXXII, pág. 146.}\vspace{5pt}
 
-Las \textit{Coplas por la muerte de su padre} son una «colección» de coplas escritas y dedicadas a don Rodrigo Manrique, padre del autor y maestre de la Orden de Santiago, hacia finales de 1476, tras su fallecimiento. El texto presenta una figura ensalzada del maestre como victorioso guerrero que \comillas{\textit{fizo guerras a moros}} [\textit{bellator}], hombre virtuoso y católico honrado, detalles apreciables con claridad, puesto que separa la vivencia en la \textit{fama} de la \textit{terrenal} y la \textit{trascendente}. Utiliza la \comillas{copla de pie quebrado} --tres octosílabos y un tetrasílabo--, lenguaje llano y culto, rimas consonantes y posee erudición histórica, filosófica y teológica.
+Las \textit{Coplas por la muerte de su padre} son una \comillas{colección} de coplas escritas y dedicadas a don Rodrigo Manrique, padre del autor y maestre de la Orden de Santiago, hacia finales de 1476, tras su fallecimiento. El texto presenta una figura ensalzada del maestre como victorioso guerrero que \comillas{\textit{fizo guerras a moros}} [\textit{bellator}], hombre virtuoso y católico honrado, detalles apreciables con claridad, puesto que separa la vivencia en la \textit{fama} de la \textit{terrenal} y la \textit{trascendente}. Utiliza la \comillas{copla de pie quebrado} --tres octosílabos y un tetrasílabo--, lenguaje llano y culto, rimas consonantes y posee erudición histórica, filosófica y teológica.
 
-El título, \textit{Coplas por la muerte de su padre}, resulta un tanto arbitraria si se analizan las rúbricas que la tradición textual transmitió: los testimonios transmitieron \comillas{dezir} [\textit{82*JM}], \comillas{coplas} [\textit{LB3}, \textit{HH1}, \textit{83*IM}] y algún otro \comillas{De don jorge manrique} [\textit{86*RL}]. Parece evidente, pues, que el título no es estrictamente reconstruible aunque, por mayoría, se prefiere \comillas{coplas}, como puede observarse desde la edición de \textcite{Foulché-Delbosc1902} hasta \textcite{Beltrán2013}. Es probable que, como algunos textos medievales, este no se haya concebido con un título como tal, o al menos no como se transmitió.
+El título, \textit{Coplas por la muerte de su padre}, resulta un tanto arbitrario si se analizan las rúbricas que la tradición textual transmitió: los testimonios transmitieron \comillas{dezir} [\textit{82*JM}], \comillas{coplas} [\textit{LB3}, \textit{HH1}, \textit{83*IM}] y algún otro \comillas{De don jorge manrique} [\textit{86*RL}]. Parece evidente, pues, que el título no es reconstruible, porque todos aquellos indican que está \comillas{tercerizado} y, además, hace referencia a la escructura formal de la composición; y aunque por mayoría se prefiere \comillas{coplas}, como puede observarse desde la edición de \textcite{Foulché-Delbosc1902} hasta \textcite{Beltrán2013}, no resulta sensato sostener que aquel, en sus variantes, es el título propiamente de la \comillas{colección}. Es probable que, como algunos textos medievales, este no se haya concebido con un título como tal.
 
-No se conservaron autógrafos de alguna copla ni testimonios que puedan considerarse apógrafos o idiógrafos. El testimonio más antiguo que contiene la colección de cuarenta coplas es el manuscrito del \textit{Cancionero de Egerton}, y no es sino hasta ca. 1482-83 --seis o siete años tras la redacción y cuatro o cinco tras el fallecimiento del autor-- que aparece en un impreso en carácter de \textit{editio princeps}. Es necesario destacar que los textos de Manrique solo se conservaron dispersos en cancioneros.
+No se conservaron autógrafos de alguna copla ni testimonios que puedan considerarse apógrafos o idiógrafos. El testimonio más antiguo que contiene la colección de cuarenta coplas es el manuscrito del \textit{Cancionero de Egerton}, y no es sino hasta ca. 1482-83 --seis o siete años tras la redacción y cuatro o cinco tras el fallecimiento del autor-- que aparece en un impreso en carácter de \textit{editio princeps}. Es necesario destacar que los textos de Manrique solo se conservaron divididos en cancioneros, a diferencia de otros autores como Luis de Góngora, quien gozó de \comillas{colecciones} de sus textos, construyendo así un auténtico \textit{corpus}, como puede observarse en el \textit{Códice Chacón} [RES/45] en la Biblioteca Nacional de España.
 
-\section*{\fontsize{13}{14.35}\selectfont TESTIMONIOS\footnoteE{Se adoptan las siglas utilizadas por \textcite{PérezPriego2017} quien, a su vez, las adopta de Dutton a partir de \textit{El cancionero del s. XV (ca. 1360-1520)} [7 vols.].}}
-\addcontentsline{toc}{section}{Testimonios}
+\subsection*{\fontsize{11}{14}\selectfont TESTIMONIOS VTILIZADOS\footnoteE{Se adoptan las siglas utilizadas por \textcite{PérezPriego2017} quien, a su vez, las adopta de Dutton a partir de \textit{El cancionero del s. XV (ca. 1360-1520)} [7 vols.].}}
+\addcontentsline{toc}{subsection}{Testimonios utilizados}
 
 \textit{LB3} = \textit{Cancionero de Egerton} [British Library, Eg. 939].
 %
@@ -113,8 +111,8 @@ Manuscrito en papel; 21x15cm.; copia del s. XVIII de un manuscrito de finales de
 %
 Impresión incunable a doble columna; tipografía gótica; Zamora, 1483?; 90 fols.; los ff. 67\tsup{r.}-70\tsup{r.} contienen las coplas con la rúbrica \comillas{Coplas que hizo do\textit{n} jorge manrriq\textit{ue} ala muerte del maestre de santiago do\textit{n} rodrigo manrique su padre}; existen dos ejemplares y se hallan uno, en la Biblioteca Nacional de España [INC/897], y otro, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial [38-I-22]. \url{https://bdh-rd.bne.es/viewer.vm?id=0000176297&page=1}
 
-\section*{\fontsize{13}{14.35}\selectfont CRITERIOS DE EDICIÓN}
-\addcontentsline{toc}{section}{Criterios de edición}
+\subsection*{\fontsize{11}{14}\selectfont CRITERIOS DE EDICIÓN}
+\addcontentsline{toc}{subsection}{Criterios de edición}
 
 Para la fijación del texto se tuvo en cuenta el trabajo filológico de \textcite{Beltrán1991,Beltrán2013} y \textcite{PérezPriego1990,PérezPriego2017} y, conforme a ello, se siguió el subarquetipo \textit{α} del \textit{stemma codicum} construido por el segundo. Descartando el subarquetipo \textit{β}, siendo \textit{83*IM} su testimonio más representativo\footnoteE{Aunque el subarquetipo \textit{β} contenga otros testimonios útiles para la reconstrucción del arquetipo \textit{X} --esto es, \textit{EM6} y \textit{PN1}--, a efectos prácticos de esta edición liminar se utilizó únicamente \textit{83*IM} por ser el testimonio más representativo del subarquetipo, según lo estudiaron \textcite{PérezPriego2017} y \textcite{Beltrán1991,Beltrán2013}.}, la filiación de los testimonios se resumiría con el siguiente \textit{stemma} reducido a partir de lo anteriormente indicado\footnoteE{Para el \textit{stemma} completo, \textit{cfr.} \textcite[103]{PérezPriego2017}.}:%
 
@@ -174,23 +172,23 @@ El orden de las coplas que se sigue es el de \textit{LB3} que, a su vez, coincid
 
 Constituyen al aparato crítico el orden y rúbricas en los testimonios, el aparato de variantes y los pie de página adicionales. El tipo de aparato de variantes es negativo. Luego de indicar el pasaje al que corresponde la variante --si se coloca \comillas{||}, indicará que aún continúa en el mismo pasaje--, se colocará la lección adoptada seguida por el signo \comillas{]} que encierra la lección adoptada, y tras el signo, las lecciones descartadas seguidas por su(s) sigla(s)\footnoteE{Irán en cursiva las siglas y se separarán con comas cada una.}, separada cada unidad por un \comillas{;}. Un ejemplo con la copla V: \comillas{56 quando] mientra \textit{δ}; quanto \textit{HH1}}. Se eludirán variantes gráficas y de espacio. Los comentarios contendrán argumentos en torno a las lecciones adoptadas, problemas respecto al estado del testimonio de base --correcciones, entre otros-- y plausibles interpretaciones.
 
-\section*{\fontsize{13}{14.35}\selectfont BIBLIOGRAFÍA}
+\section*{\fontsize{11}{14}\selectfont BIBLIOGRAFÍA}
 \addcontentsline{toc}{section}{Bibliografía}
 \nocite{*}
 \printbibliography[heading=none]
 \newpage
 
-\section*{\raggedleft \fontsize{13}{14.35}\selectfont TEXTO Y APARATO CRÍTICOS}
+\section*{\raggedleft \fontsize{13}{14}\selectfont TEXTO Y APARATO CRÍTICOS}
 \addcontentsline{toc}{section}{Texto y aparato críticos}
 \newpage
 
-\section*{\fontsize{13}{14.35}\selectfont CONSPECTVS SIGLORVM}
+\section*{\fontsize{11}{14.35}\selectfont CONSPECTVS SIGLORVM}
 \addcontentsline{toc}{section}{Conspectus siglorum}
 
-\subsection*{\fontsize{9.5}{11.96}\selectfont SIGLA TESTIMONIORVM}
+\subsection*{\fontsize{9.5}{12}\selectfont SIGLA TESTIMONIORVM}
 \addcontentsline{toc}{subsection}{Sigla testimoniorum}
-
-\begin{itemize}[label=]%
+\vspace*{-6pt}
+\begin{itemize}[label=,leftmargin=0.6cm]%
 \item \textit{LB3} = \textit{Cancionero de Egerton}, 1470?-1480?
 \item \textit{82*JM} = \textit{Vita Christi por Fray Íñigo de Mendoza}, ca. 1480-1484.
 \item \textit{86*RL} = \textit{Cancionero de Ramón de Llavia}, 1488-1490?
@@ -199,10 +197,10 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 \item \textit{83*IM} = \textit{Cancionero de fray Íñigo de Mendoza}, 1483?%
 \end{itemize}
 
-\subsection*{\fontsize{9.5}{11.96}\selectfont SIGLA APPARATI CRITICI}
+\subsection*{\fontsize{9.5}{12}\selectfont SIGLA APPARATI CRITICI}
 \addcontentsline{toc}{subsection}{Sigla apparati critici}
-
-\begin{itemize}[label=]%
+\vspace*{-6pt}
+\begin{itemize}[label=,leftmargin=0.6cm]%
 \item \textit{a. corr.} = ante correctionem [antes de la corrección].
 \item \textit{gl.} = glossa.
 \item \textit{corr.} = correxit [corrigió].
@@ -219,12 +217,11 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 \item \textit{γ} = \textit{δ} + \textit{ε}.%
 \end{itemize} 
 \newpage
-%Aquí inician las COPLAS POR LA MVERTE DE SV PADRE.
-{\begin{center}
+%
+\beginnumbering
+\begin{center}
 		[I]\footnoteA{[I] {\fontsize{7.5}{9}\selectfont INCIPIT} = Coplas que fiço don jorje manrriq\textit{ue} sobre la muerte del maestre de santiago don rrodrigo manrriq\textit{ue} su padre \textit{LB3}; Dezir de don jorge manrriq\textit{ue} por la muerte de su padre \textit{82*JM}; De don jorge manrique por la muerte de su padre \textit{86*RL}; Coplas de do\textit{n} jorge ma\textit{n}riq\textit{ue} a la muerte del maestre don rrod\textit{rig}o ma\textit{n}riq\textit{ue} su padre \textit{HH1}; Coplas que hizo do\textit{n} jorge manrriq\textit{ue} ala muerte del maestre de santiago do\textit{n} rodrigo manrique su padre \textit{83*IM}.}
 \end{center}
-%Espacio para que el comando que ejecuta el sistema no se quiebre.
-\beginnumbering
 \pstart
 {\fontsize{9}{11}\selectfont RECUERDE}\footnoteE{\comillas{Recuerde} no tiene la acepción de \comillas{traer a la memoria}, sino la de \comillas{despertar} y, para ello, el \textit{Tesoro de la lengua castellana} de \textcite{Covarrubias1611} registra para el vocablo \textit{recordar} \comillas{despertar el que duerme, o boluer en acuerdo, del verbo recordor}. Posteriormente se registró el significado \comillas{Metaphoricamente vale despertar al que está dormido} (\textit{Autoridades}, 2ª acepción).} el alma dormida,\\
 avive el seso y despierte\\
@@ -240,9 +237,9 @@ cómo a nuestro paresçer\\
 fue mejor.
 \pend
 
-{\begin{center}
+\begin{center}
 		[II]
-\end{center}}
+\end{center}
 \pstart
 \edtext{Y pues}{\lemma{y pues}\Afootnote{Pues si \textit{δ}}} vemos lo presente\\
 cómo en un pu\textit{n}to \edtext{se}{\Afootnote{\textit{om. 83*IM}}} es ido\\
@@ -501,7 +498,7 @@ Los infantes de Aragó\textit{n},\\
 ¿Qué fue de ta\textit{n}to galán?\\
 ¿Qué fue de tanta inve\textit{n}çión\\
 como \edtext{traxiero\textit{n}}{\Afootnote{truxieron \textit{δ}, \textit{MN19}}}?\\
-Las justas y los torneos,\edtext{}{\linenum{|||||189}\Afootnote[nosep]{\hspace*{-0.5em}/190–192 ~\textit{transp. 86*RL}}}\\
+Las justas y los torneos,\edtext{}{\linenum{|||||189}\Afootnote[nosep]{\hspace*{-0.4em}/190–192 ~\textit{transp. 86*RL}}}\\
 parame\textit{n}tos, bordaduras\\
 y çimeras\\
 ¿fuero\textit{n} sino devaneos?\\
