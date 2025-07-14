@@ -2,7 +2,7 @@
 \usepackage[noeledsec,noend,noledgroup,nopenalties,series={A,E},parapparatus]{reledmac}
 \usepackage{reledpar}
 \usepackage{fontspec}
-\usepackage[paperwidth=17.00cm,paperheight=25.50cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
+\usepackage[paperwidth=17.50cm,paperheight=25.50cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
 \usepackage{polyglossia}
 \usepackage[breaklinks=true,hidelinks]{hyperref}
 \usepackage{tikz}
@@ -24,15 +24,24 @@
 \fnpos{critical-familiar}
 \fnpos{{A}{familiar},{A}{critical},{E}{familiar}}
 \Xarrangement{paragraph}
+\arrangementX[A]{paragraph}
+\AtBeginDocument{\Xmaxhnotes{0.66\textheight}\maxhnotesX{1\textheight}}
 \Xinplaceoflemmaseparator{0em}
 \Xnumberonlyfirstinline
 \Xnumberonlyfirstintwolines
+\Xnonbreakableafternumber
 \parindentX[E]
 \Xsymlinenum{||}
 \Xbeforesymlinenum{-0.6em}
 \Xafterlemmaseparator{0.4em}
 \Xbeforelemmaseparator{-0.1em}
 \Xafternumber{0.4em}
+%
+\prenotesX{11pt}
+\afterruleX{2pt}
+\Xprenotes{11pt}
+\Xafterrule{2pt}
+%
 \newcommand{\comillas}[1]{«#1»}
 \newcommand{\tsup}[1]{\textsuperscript{#1}}
 \renewcommand{\thefootnoteA}{}
@@ -80,7 +89,7 @@ Jorge Manrique nació ca. 1440 y falleció en abril de 1479. Una noticia de su f
 
 Las \textit{Coplas por la muerte de su padre} son una \comillas{colección} de coplas compuestas y dedicadas a don Rodrigo Manrique, padre del autor y maestre de la Orden de Santiago, hacia finales de 1476, tras su fallecimiento. El texto presenta una figura ensalzada del maestre como victorioso guerrero que \comillas{\textit{fizo guerras a moros}} [\textit{bellator}], hombre virtuoso y católico honrado, detalles apreciables con claridad, puesto que separa la vivencia en la \textit{fama} de la \textit{terrenal} y la \textit{trascendente}. Utiliza la \comillas{copla de pie quebrado} o \comillas{sextina manriqueña} --cuatro octosílabos y dos tetrasílabos con rimas consonantes--, lenguaje llano y culto, y posee erudición histórica, filosófica y teológica.
 
-El título, \textit{Coplas por la muerte de su padre}, resulta un tanto arbitrario si se analizan las rúbricas que la tradición textual transmitió: los testimonios transmitieron \comillas{dezir} [\textit{82*JM}], \comillas{coplas} [\textit{LB3}, \textit{HH1}, \textit{83*IM}] y algún otro \comillas{De don jorge manrique} [\textit{86*RL}]. Parece evidente, pues, que el título no es reconstruible, porque todos aquellos indican que está \comillas{tercerizado} y, además, hace referencia a la escructura formal de la composición; y aunque por mayoría se prefiere \comillas{coplas}, como puede observarse desde la edición de \textcite{Foulché-Delbosc1902} hasta \textcite{Beltrán2013}, no resulta sensato sostener que aquel, en sus variantes, es el título propiamente de la \comillas{colección}. Es probable que, como algunos textos medievales, este no se haya concebido con un título como tal.
+El título, \textit{Coplas por la muerte de su padre}, resulta un tanto arbitrario si se analizan las rúbricas que la tradición textual transmitió: los testimonios transmitieron \comillas{dezir} [\textit{82*JM}], \comillas{coplas} [\textit{LB3}, \textit{HH1}, \textit{83*IM}] y algún otro \comillas{De don jorge manrique} [\textit{86*RL}]. Parece evidente, pues, que el título no es reconstruible, porque todos aquellos indican que está \comillas{tercerizado} y, además, hace referencia a la estructura formal de la composición; y aunque por mayoría se prefiere \comillas{coplas} por lo anteriormente indicado, no resulta sensato sostener que aquel, en sus variantes, es el título propiamente de la \comillas{colección}. Es probable que, como algunos textos medievales, este no se haya concebido con un título como tal.
 
 No se conservaron autógrafos de alguna copla ni testimonios que puedan considerarse apógrafos o idiógrafos. El testimonio más antiguo que contiene la colección de cuarenta coplas es el manuscrito del \textit{Cancionero de Egerton}, y no es sino hasta ca. 1482-83 --seis o siete años tras la redacción y cuatro o cinco tras el fallecimiento del autor-- que aparece en un impreso en carácter de \textit{editio princeps}. Es necesario destacar que los textos de Manrique solo se conservaron divididos en cancioneros, a diferencia de otros autores como Luis de Góngora, quien gozó de \comillas{colecciones} de sus textos, construyendo así un auténtico \textit{corpus}, como puede observarse en el \textit{Códice Chacón} [RES/45] en la Biblioteca Nacional de España.
 
@@ -89,15 +98,15 @@ No se conservaron autógrafos de alguna copla ni testimonios que puedan consider
 
 \textit{LB3} = \textit{Cancionero de Egerton} [British Library, Eg. 939].
 %
-Manuscrito en papel con marcas de agua; de finales de 1470 e inicios de 1480; 19x14,5cm.; escritura gótica cortesana, copista castellano; copia de un genuino llevado a cabo en la corte de Navarra; contiene textos poéticos y epistolares; 3 guardas [2 al inicio y 1 de cierre] y 122 fols.; los ff. 15\tsup{r.}-18\tsup{v.} contienen las coplas con la rúbrica \comillas{¶Coplas que fiço don jorje manrriq\textit{ue} sobre la muerte del maestre de santiago don rrodrigo manrriq\textit{ue} su padre}; la copla XL estuvo incompleta, pero otra redacción la completó en los pasajes restantes con una escritura gótica descuidada, escrita en los espacios restantes del f. 18v., porque el fol. central [primitivo f. 19\tsup{v.}] no se conservó: tras aquel debía continuar el texto del \textit{Infante Epitus} \textcite{Beltrán2011}; \comillas{cancionero pro-Isabelino} \parencite{Severin2000}. \comillas{\url{https://www.cervantesvirtual.com/nd/ark:/59851/bmcj1034}}
+Manuscrito en papel con marcas de agua; de finales de 1470 e inicios de 1480; 19x14,5cm.; escritura gótica cortesana, copista castellano; copia de un genuino llevado a cabo en la corte de Navarra; contiene textos poéticos y epistolares; 3 guardas [2 al inicio y 1 de cierre] y 122 fols.; los ff. 15\tsup{r.}-18\tsup{v.} contienen las coplas con la rúbrica \comillas{¶Coplas que fiço don jorje manrriq\textit{ue} sobre la muerte del maestre de santiago don rrodrigo manrriq\textit{ue} su padre}; la copla XL estuvo incompleta, pero otra redacción la completó en los pasajes restantes con una escritura gótica descuidada, escrita en los espacios restantes del f. 18v., porque el fol. central [primitivo f. 19\tsup{v.}] no se conservó: tras aquel debía continuar el texto del \textit{Infante Epitus} \textcite{Beltrán2011}; \comillas{cancionero pro-Isabelino} \parencite{Severin2000}. <\url{https://www.cervantesvirtual.com/nd/ark:/59851/bmcj1034}>
 
 \textit{82*JM} = \textit{Vita Christi por fray Íñigo de Mendoza} [RBME, 100-II-17].
 %
-Impresión incunable; tipografía gótica a doble columna; ca. 1480-1484, Zaragosa?; 52 fols.; los ff. 41\tsup{r.}-44\tsup{v.} contienen las coplas con la rúbrica \comillas{Dezir de don jorge manrriq\textit{ue} por la muerte de su padre}; hay dos ejemplares y se hallan: uno, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial [100-II-17], y el otro, en la Biblioteca Comunale de Palermo [Esp-XI, F. 56, núm. 3]; plausible \textit{editio princeps}. \url{https://rbme.patrimonionacional.es/s/rbme/item/14443#?xywh=-1601%2C-39%2C4854%2C2165}
+Impresión incunable; tipografía gótica a doble columna; ca. 1480-1484, Zaragosa?; 52 fols.; los ff. 41\tsup{r.}-44\tsup{v.} contienen las coplas con la rúbrica \comillas{Dezir de don jorge manrriq\textit{ue} por la muerte de su padre}; hay dos ejemplares y se hallan: uno, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial [100-II-17], y el otro, en la Biblioteca Comunale de Palermo [Esp-XI, F. 56, núm. 3]; plausible \textit{editio princeps}. <\url{https://rbme.patrimonionacional.es/s/rbme/item/14443#?xywh=-1601%2C-39%2C4854%2C2165}>
 
 \textit{86*RL} = \textit{Cancionero de Ramón de Llavia} [BNE, INC/2567].
 %
-Impresión a doble columna; tipografía gótica; Zaragoza, Pablo Hurus, ca. 1488-1490?; 98 fols.; los ff. 73\tsup{r.}-76\tsup{r.} contienen las coplas con la rúbrica \comillas{De don jorge manrrique por la muerte de su padre}; dos ejemplares en la Biblioteca Nacional de España con las siglas INC/2567 y INC/2892; dedicado a doña Francisquina de Bardací, según el prólogo \comillas{fecho a la señora doña francisqujna de bardaçi mujer del magnifico señor mofsen(?) joan fernandez de heredia gouernador de arago\textit{n} por ramon dellabia en q\textit{ue} le endereça el presente libro}. \url{https://bdh-rd.bne.es/viewer.vm?id=0000108057&page=1}
+Impresión a doble columna; tipografía gótica; Zaragoza, Pablo Hurus, ca. 1488-1490?; 98 fols.; los ff. 73\tsup{r.}-76\tsup{r.} contienen las coplas con la rúbrica \comillas{De don jorge manrrique por la muerte de su padre}; dos ejemplares en la Biblioteca Nacional de España con las siglas INC/2567 y INC/2892; dedicado a doña Francisquina de Bardací, según el prólogo \comillas{fecho a la señora doña francisqujna de bardaçi mujer del magnifico señor mofsen(?) joan fernandez de heredia gouernador de arago\textit{n} por ramon dellabia en q\textit{ue} le endereça el presente libro}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000108057&page=1}>
 
 \textit{HH1} = \textit{Cancionero de Oñate-Castañeda} [Harvard Houghton Library, MS. Span. 97].
 %
@@ -105,16 +114,16 @@ Manuscrito en papel; 28x20,6cm.; escritura gótica del s. XV con rasgos de corte
 
 \textit{MN19} = \textit{Cancionero de Pero Guillén de Segovia} [BNE, MS/4114].
 %
-Manuscrito en papel; 21x15cm.; copia del s. XVIII de un manuscrito de finales del s. XV (Pérez Priego, 2017; Beltrán, 1991); 6 guardas [3 al inicio y 3 de cierre] y 731 fols.; los ff. 407\tsup{r.}-418\tsup{v.} contienen las coplas X-XL [acéfalo]. \url{https://bdh-rd.bne.es/viewer.vm?id=0000134993&page=1}
+Manuscrito en papel; 21x15cm.; copia del s. XVIII de un manuscrito de finales del s. XV (Pérez Priego, 2017; Beltrán, 1991); 6 guardas [3 al inicio y 3 de cierre] y 731 fols.; los ff. 407\tsup{r.}-418\tsup{v.} contienen las coplas X-XL [acéfalo]. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000134993&page=1}>
 
 \textit{83*IM} = \textit{Cancionero de fray Íñigo de Mendoza} [BNE, INC/897].
 %
-Impresión incunable a doble columna; tipografía gótica; Zamora, 1483?; 90 fols.; los ff. 67\tsup{r.}-70\tsup{r.} contienen las coplas con la rúbrica \comillas{Coplas que hizo do\textit{n} jorge manrriq\textit{ue} ala muerte del maestre de santiago do\textit{n} rodrigo manrique su padre}; existen dos ejemplares y se hallan uno, en la Biblioteca Nacional de España [INC/897], y otro, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial [38-I-22]. \url{https://bdh-rd.bne.es/viewer.vm?id=0000176297&page=1}
+Impresión incunable a doble columna; tipografía gótica; Zamora, 1483?; 90 fols.; los ff. 67\tsup{r.}-70\tsup{r.} contienen las coplas con la rúbrica \comillas{Coplas que hizo do\textit{n} jorge manrriq\textit{ue} ala muerte del maestre de santiago do\textit{n} rodrigo manrique su padre}; existen dos ejemplares y se hallan uno, en la Biblioteca Nacional de España [INC/897], y otro, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial [38-I-22]. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000176297&page=1}>
 
 \subsection*{\fontsize{11}{14}\selectfont CRITERIOS DE EDICIÓN}
 \addcontentsline{toc}{subsection}{Criterios de edición}
 
-Para la fijación del texto se tuvo en cuenta el trabajo filológico de \textcite{Beltrán1991,Beltrán2013} y \textcite{PérezPriego1990,PérezPriego2017} y, conforme a ello, se siguió el subarquetipo \textit{α} del \textit{stemma codicum} construido por el segundo. Descartando el subarquetipo \textit{β}, siendo \textit{83*IM} su testimonio más representativo\footnoteE{Aunque el subarquetipo \textit{β} contenga otros testimonios útiles para la reconstrucción del arquetipo \textit{X} --esto es, \textit{EM6} y \textit{PN1}--, a efectos prácticos de esta edición liminar se utilizó únicamente \textit{83*IM} por ser el testimonio más representativo del subarquetipo, según lo estudiaron \textcite{PérezPriego2017} y \textcite{Beltrán1991,Beltrán2013}.}, la filiación de los testimonios se resumiría con el siguiente \textit{stemma} reducido a partir de lo anteriormente indicado\footnoteE{Para el \textit{stemma} completo, \textit{cfr.} \textcite[103]{PérezPriego2017}.}:%
+Para la fijación del texto se tuvo en cuenta el trabajo filológico de \textcite{Beltrán1991,Beltrán2013} y \textcite{PérezPriego1990,PérezPriego2017} y, conforme a ello, se siguió el subarquetipo \textit{α} del \textit{stemma codicum} construido por el segundo. Descartando el subarquetipo \textit{β}, siendo \textit{83*IM} su testimonio más representativo\footnoteE{Aunque el subarquetipo \textit{β} contenga otros testimonios útiles para la reconstrucción del arquetipo \textit{X} --esto es, \textit{EM6} y \textit{PN1}--, a efectos prácticos de esta edición liminar se utilizó únicamente \textit{83*IM} por ser el testimonio más representativo del subarquetipo, según lo estudiaron \textcite{PérezPriego2017} y \textcite{Beltrán1991,Beltrán2013}.}, la filiación de los testimonios se resumiría con el siguiente \textit{stemma} reducido a partir de lo anteriormente indicado\footnoteE{Para el \textit{stemma} completo \textit{cfr.} \textcite[103]{PérezPriego2017}.}:%
 
 	\begin{figure}[ht]
 		\centering
@@ -173,7 +182,7 @@ Las contracciones se separan sin indicación alguna. Las grafías en cursiva cor
 
 El orden de las coplas que se sigue es el de \textit{LB3} que, a su vez, coincide con el orden y conclusiones de \textcite{Senabre1983}, \textcite{Palumbo1983}, \textcite{Orduna1967}, \textcite{Beltrán1991,Beltrán2013}, \textcite{PérezPriego1990,PérezPriego2017} y la 1ª edición crítica \parencite{Foulché-Delbosc1902}, descartando así el orden de \textit{82*JM}, quizá la \textit{editio princeps}.
 
-Constituyen al aparato crítico el orden y rúbricas en los testimonios, el aparato de variantes y los pie de página adicionales. El tipo de aparato de variantes es negativo. Luego de indicar el pasaje al que corresponde la variante --si se coloca \comillas{||}, indicará que aún continúa en el mismo pasaje--, se colocará la lección adoptada seguida por el signo \comillas{]} que encierra la lección adoptada, y tras el signo, las lecciones descartadas seguidas por su(s) sigla(s)\footnoteE{Irán en cursiva las siglas y se separarán con comas cada una.}, separada cada unidad por un \comillas{;}. Un ejemplo con la copla V: \comillas{56 quando] mientra \textit{δ}; quanto \textit{HH1}}. Se eludirán variantes gráficas y de espacio. Los comentarios contendrán argumentos en torno a las lecciones adoptadas, problemas respecto al estado del testimonio de base --correcciones, entre otros-- y plausibles interpretaciones.
+Constituyen al aparato crítico el orden y rúbricas en los testimonios, el aparato de variantes y las explicaciones adicionales. El tipo de aparato de variantes es negativo. Luego de indicar el pasaje al que corresponde la variante --si se coloca \comillas{||}, indicará que aún continúa en el mismo pasaje--, se colocará la lección adoptada seguida por el signo \comillas{]} que encierra la lección adoptada, y tras el signo, las lecciones descartadas seguidas por su(s) sigla(s)\footnoteE{Irán en cursiva las siglas y se separarán con comas cada una.}, separada cada unidad por un \comillas{;}. Se eludirán variantes gráficas y de espacio. Las explicaciones contendrán argumentos en torno a las lecciones adoptadas, problemas respecto al estado del testimonio de base --correcciones o daños, entre otros-- y plausibles interpretaciones.
 
 \section*{\fontsize{11}{14}\selectfont BIBLIOGRAFÍA}
 \addcontentsline{toc}{section}{Bibliografía}
@@ -181,7 +190,7 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 \printbibliography[heading=none]
 \newpage
 
-\section*{\raggedleft \fontsize{13}{14}\selectfont TEXTO Y APARATO CRÍTICOS}
+\section*{\raggedright \fontsize{13}{14}\selectfont TEXTO Y APARATO CRÍTICOS}
 \addcontentsline{toc}{section}{Texto y aparato críticos}
 \newpage
 
@@ -823,7 +832,7 @@ a su puerta,
 \pstart
 diziendo: «bue\textit{n} cavallero,\\
 dexad el mu\textit{n}do engañoso\\                                                               
-\edtext{sin falago}{\Afootnote{y su [\textit{f}-\textit{h}]alago \textit{γ}; con halago \textit{83*IM}}}\footnoteE{Los demás testimonios transmiten «y su [\textit{f}-\textit{h}]alago», que parece tener más sentido, pero que incurre en una hipermetría, porque \textit{h} corresponde a una consonante aspirada o una \textit{f} inicial latina, ya que entre los testimonios alternan \textit{h} [\textit{86*RL}] y \textit{f} [\textit{HH1}, \textit{MN19}], aunque alguno la omite [\textit{82*JM}]; de ser así esto, algo apreciable por la inestabilidad gráfica, la sinalefa no sería posible y, por tanto, sería conveniente adoptar la lección de \textit{LB3}, que es un tetrasílabo. La lección \textit{sin falago} apuntaría --probablemente-- a que don Rodrigo Manrique debería dejar el mundo \comillas{sin atender} o \comillas{seguir su} \textit{falago}, un sentido más o menos similar. Quizá la lección \textit{y su }[\textit{f}-\textit{h}]\textit{alago} incurre en una lectio facilior.};\\
+\edtext{sin falago}{\Afootnote{y su [\textit{f}-\textit{h}]alago \textit{γ}; con halago \textit{83*IM}}}\footnoteE{Los demás testimonios transmiten «y su [\textit{f}-\textit{h}]alago», que parece tener más sentido, pero que incurre en una hipermetría, porque \textit{h} corresponde a una consonante aspirada o una \textit{f} inicial latina, ya que entre los testimonios alternan \textit{h} [\textit{86*RL}] y \textit{f} [\textit{HH1}, \textit{MN19}], aunque alguno la omite [\textit{82*JM}]; de ser así esto, algo apreciable por la inestabilidad gráfica, la sinalefa no sería posible y, por tanto, sería conveniente adoptar la lección de \textit{LB3}, que es un tetrasílabo. La lección \textit{sin falago} apuntaría --probablemente-- a que don Rodrigo Manrique debería dejar el mundo \comillas{sin atender} o \comillas{seguir su} \textit{falago}, un sentido más o menos similar. Quizá la lección \textit{y su }[\textit{f}-\textit{h}]\textit{alago} incurre en una \textit{lectio facilior}.};\\
 v\textit{uest}ro coraçó\textit{n} de azero\\
 muestre su esfuerço famoso\\ 
 en este trago.\par
